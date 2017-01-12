@@ -1,1 +1,1 @@
-# ruby-bootstrap-upshot
+# ruby-bootstrap-dokoma-admin
