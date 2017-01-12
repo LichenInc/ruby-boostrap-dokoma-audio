@@ -1,6 +1,6 @@
 #!/bin/sh
 set -x
-BOOTSTRAP_URL="https://github.com/alesium/ruby-bootstrap-upshot.git"
+BOOTSTRAP_URL="https://github.com/LichenInc/ruby-bootstrap-dokoma-admin.git"
 
 curl -s https://raw.githubusercontent.com/alesium/common-bootstrap-upshot/master/bootstrap.sh > /tmp/common-bootstrap.sh
 . /tmp/common-bootstrap.sh
