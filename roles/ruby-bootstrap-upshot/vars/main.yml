@@ -22,3 +22,4 @@ os_packages_dependencies:
   - nodejs
   - redis
   - ffmpeg-devel
+ruby_version: "ruby-2.3.1"
