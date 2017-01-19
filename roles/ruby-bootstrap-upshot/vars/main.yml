@@ -21,4 +21,5 @@ os_packages_dependencies:
   - nodejs
   - redis
   - ffmpeg-devel
+  - postgresql-devel
 ruby_version: "ruby-2.3.1"
