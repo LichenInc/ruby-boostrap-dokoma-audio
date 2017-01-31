@@ -2,13 +2,13 @@
   - name: install nux desktop
     yum: name="http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm" state="present"
  
-  - name: install bower
-    npm: name="{{ item }}" state="present" global="yes"
-    with_items: "{{ npm_packages_dependencies }}"
-
   - name: install packages
     yum: name="{{ item }}" state="present"
     with_items: "{{ os_packages_dependencies }}"
+
+  - name: install npm packages
+    npm: name="{{ item }}" state="present" global="yes"
+    with_items: "{{ npm_packages_dependencies }}"
 
   - name: install custom facts
     template: src="upshot_ruby.fact.j2" dest="/etc/ansible/facts.d/upshot_ruby.fact" mode="0755" owner="root"
