@@ -19,6 +19,7 @@ os_packages_dependencies:
   - bison
   - sqlite-devel
   - nodejs
+  - npm
   - redis
   - ffmpeg-devel
   - postgresql-devel
