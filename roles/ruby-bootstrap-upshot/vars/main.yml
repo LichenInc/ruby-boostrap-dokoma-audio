@@ -22,7 +22,8 @@ os_packages_dependencies:
   - npm
   - redis
   - ffmpeg-devel
-  - postgresql-devel
+  - postgresql95-devel
+
 ruby_version: "ruby-2.3.1"
 npm_packages_dependencies:
   - bower

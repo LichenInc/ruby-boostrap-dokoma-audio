@@ -2,6 +2,9 @@
   - name: install nux desktop
     yum: name="http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm" state="present"
  
+  - name: install pgsql yum
+    yum: name="https://yum.postgresql.org/9.5/redhat/rhel-7-x86_64/pgdg-redhat95-9.5-3.noarch.rpm" stat="present"
+
   - name: install bower
     npm: name="{{ item }}" state="present" global="yes"
     with_items: "{{ npm_packages_dependencies }}"
