@@ -23,6 +23,7 @@ os_packages_dependencies:
   - redis
   - ffmpeg-devel
   - postgresql95-devel
+  - java-1.8.0-openjdk
 
 ruby_version: "ruby-2.3.1"
 npm_packages_dependencies:
