@@ -5,13 +5,13 @@
   - name: install pgsql yum
     yum: name="https://yum.postgresql.org/9.5/redhat/rhel-7-x86_64/pgdg-redhat95-9.5-3.noarch.rpm" state="present"
 
-  - name: install bower
-    npm: name="{{ item }}" state="present" global="yes"
-    with_items: "{{ npm_packages_dependencies }}"
-
   - name: install packages
     yum: name="{{ item }}" state="present"
     with_items: "{{ os_packages_dependencies }}"
+    
+  - name: install bower
+    npm: name="{{ item }}" state="present" global="yes"
+    with_items: "{{ npm_packages_dependencies }}"
 
   - name: install npm packages
     npm: name="{{ item }}" state="present" global="yes"
