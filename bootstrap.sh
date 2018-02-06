@@ -1,6 +1,6 @@
 #!/bin/sh
 set -x
-BOOTSTRAP_URL="https://github.com/LichenInc/ruby-bootstrap-dokoma-audio.git"
+BOOTSTRAP_URL="https://github.com/LichenInc/ruby-boostrap-dokoma-audio.git"
 
 if [ -d /home/vcap ]; then
    exit 0
